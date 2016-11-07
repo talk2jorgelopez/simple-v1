@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jorge Lopez | Portfolio</title>
+	
+<head>
+	<link rel="stylesheet" href="app/components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="app/components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="app/components/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="app/lib/css/w3.css">
+	<link rel="stylesheet" href="app/assets/css/portfolio.css">
+
+
+	<script src="app/components/angular/angular.min.js"></script>
+	<script src="app/components/angular-route/angular-route.js"></script>
+	<script src="app/components/jquery/dist/jquery.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/controllers/main.js"></script>
+	
+
+</head>
+
+<body ng-app="myPortfolioApp">
+<!-- Navbar (sit on top) -->
+<div class="w3-top" id="nav-top">
+	<ul class="w3-navbar" id="myNavbar">
+		<li>
+			<a href="#home" class="w3-wide">THE JORGE LOPEZ</a>
+		</li>
+		<!-- Float links to the right -->
+		<li class="w3-right w3-hide-small w3-hide-medium">
+			<a href="#bio">ABOUT JORGE</a>
+			<a href="#/edu">EDUCATION</a>
+			<a href="#jlopez-resume">RESUME</a>
+			<a href="#skills">SKILLS</a>
+			<a href="#code">CODE</a>
+			<a href="#projects">PROJECTS</a>
+		</li>
+		
+		<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+		<li class="w3-right">
+			<a href="javascript:void(0)" class="w3-right w3-hide-large" onclick="w3_open()">
+				<i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<!-- SideNav on small screens when clicking the menu icon -->
+<nav id="mySidenav" class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-large" style="display:none" >
+	<a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close x</a>
+	<a href="#bio">ABOUT JORGE</a>
+	<a href="#/edu">EDUCATION</a>
+	<a href="#jlopez-resume">RESUME</a>
+	<a href="#skills">SKILLS</a>
+	<a href="#code">CODE</a>
+	<a href="#projects">PROJECTS</a>
+</nav>
+
+<!-- Header Section Here -->
+<div class="bgimg-1 w3-display-container w3-grayscale-min" id="home" ng-controller="MainCtrl">
+	
+	<div ng-view>
+	
+	</div>
+	
+</div>
+<!-- Main Section Here -->
+
+
+<!-- Footer Section 1 here -->
+<footer class="w3-center w3-black w3-padding-64 w3-hide-small w3-hide-medium" id="footer">
+	<div class="w3-xlarge">
+		<a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+		<a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+		<a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+		<a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+		<a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+		<a href="#home" class="w3-hover-text-red" title="Go to top"><i class="fa fa-arrow-up"></i></a>
+	</div>
+</footer>
+
+<!-- Footer Section 2 here -->
+
+<footer class="w3-container w3-bottom w3-black w3-theme-dark w3-hide-large" id="footer2">
+	<div class="w3-bottombar w3-theme-dark w3-black w3-padding-0">
+		<a href="#home"><i class="w3-center w3-col s3 m3 w3-black w3-xlarge ion-ios-home"></i></a>
+		<a href="#bio"><i class="w3-center w3-col s3 m3 w3-black w3-xlarge ion-ios-person"></i></a>
+		<a href="#jlopez-resume"><i class="w3-center w3-col s3 m3 w3-black w3-xlarge ion-ios-paper"></i></a>
+		<a href="#code"><i class="w3-center w3-col s3 m3 w3-black w3-xlarge ion-code-working"></i></a>
+		<br>
+		<a href="#home"><span class="w3-center w3-col s3 m3 w3-black w3-small">Home</span></a>
+		<a href="#bio"><span class="w3-center w3-col s3 m3 w3-black w3-small">Bio</span></a>
+		<a href="#jlopez-resume"><span class="w3-center w3-col s3 m3 w3-black w3-small">Resume</span></a>
+		<a href="#code"><span class="w3-center w3-col s3 m3 w3-black w3-small">Code</span></a>
+	</div>
+</footer>
+
+<script src="app/assets/js/portfolio.js"></script>
+<script src="app/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

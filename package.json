@@ -1,0 +1,25 @@
+{
+  "name": "jlportfolio",
+  "version": "1.0.0",
+  "description": "Jorge Lopez Portfolio",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/talk2jorgelopez"
+  },
+  "keywords": [
+    "Jorge",
+    "Lopez",
+    "Portfolio",
+    "Professional",
+    "Full",
+    "Stack",
+    "Developer",
+    "Junior"
+  ],
+  "author": "Jorge L Lopez",
+  "license": "MIT"
+}
